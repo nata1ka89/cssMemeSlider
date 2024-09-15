@@ -90,8 +90,8 @@ input[type="radio"] {
 }
 
 .controls {
-    top: -43px;
-    left: 225px;
+    top: -41px;
+    left: 444px;
     position: relative;
 }
 
@@ -135,8 +135,8 @@ input[type="radio"]:nth-child(4):checked~.controls label:nth-child(4) {
     }
 
     .controls {
-        top: -91px;
-        left: 7px;
+        top: -96px;
+        left: 36px;
     }
 
     input[type="radio"]:nth-child(1):checked~.slides {
