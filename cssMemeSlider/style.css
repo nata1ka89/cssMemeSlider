@@ -41,29 +41,22 @@ body {
 }
 
 .slider {
-    width: 46%;
+    width: 40%;
     overflow: hidden;
-
-
 }
 
 .wrapper {
 
     display: flex;
     width: 100%;
-    max-width: 1280px;
     flex-direction: column;
-
     align-items: center;
-
     flex-shrink: 0;
-
     margin: 0 auto;
 }
 
 .img {
     width: 100%;
-    /*height: auto;*/
     height: 32rem;
     margin: 3rem;
 }
@@ -90,8 +83,8 @@ input[type="radio"] {
 }
 
 .controls {
-    top: -41px;
-    left: 444px;
+    top: -5vh;
+    left: 76%;
     position: relative;
 }
 
@@ -122,7 +115,11 @@ input[type="radio"]:nth-child(4):checked~.controls label:nth-child(4) {
     background-color: white;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 1020px) {
+
+    .slider {
+        width: 46%;
+    }
     .mem {
 
         width: 46vw;
@@ -135,8 +132,8 @@ input[type="radio"]:nth-child(4):checked~.controls label:nth-child(4) {
     }
 
     .controls {
-        top: -96px;
-        left: 36px;
+        top: -9vh;
+        left: 34%;
     }
 
     input[type="radio"]:nth-child(1):checked~.slides {
