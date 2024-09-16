@@ -1,0 +1,148 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Georgia";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: black;
+    background-color: black;
+}
+
+.mem {
+
+    width: 40vw;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slides {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+}
+
+.slider {
+    width: 40%;
+    overflow: hidden;
+}
+
+.wrapper {
+
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+.img {
+    width: 100%;
+    height: 32rem;
+    margin: 3rem;
+}
+
+.title {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    padding: 0.5rem;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.controls label {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem 0.5rem;
+    background-color: grey;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.controls {
+    top: -5vh;
+    left: 76%;
+    position: relative;
+}
+
+.controls label:hover {
+    background-color: white;
+}
+
+input[type="radio"]:nth-child(1):checked~.slides {
+    transform: translateX(0);
+}
+
+input[type="radio"]:nth-child(2):checked~.slides {
+    transform: translateX(-40vw);
+}
+
+input[type="radio"]:nth-child(3):checked~.slides {
+    transform: translateX(-80vw);
+}
+
+input[type="radio"]:nth-child(4):checked~.slides {
+    transform: translateX(-120vw);
+}
+
+input[type="radio"]:nth-child(1):checked~.controls label:nth-child(1),
+input[type="radio"]:nth-child(2):checked~.controls label:nth-child(2),
+input[type="radio"]:nth-child(3):checked~.controls label:nth-child(3),
+input[type="radio"]:nth-child(4):checked~.controls label:nth-child(4) {
+    background-color: white;
+}
+
+@media (max-width: 1020px) {
+
+    .slider {
+        width: 46%;
+    }
+    .mem {
+
+        width: 46vw;
+
+    }
+
+    .img {
+
+        height: 14rem;
+    }
+
+    .controls {
+        top: -9vh;
+        left: 34%;
+    }
+
+    input[type="radio"]:nth-child(1):checked~.slides {
+        transform: translateX(0);
+    }
+
+    input[type="radio"]:nth-child(2):checked~.slides {
+        transform: translateX(-46vw);
+    }
+
+    input[type="radio"]:nth-child(3):checked~.slides {
+        transform: translateX(-92vw);
+    }
+
+    input[type="radio"]:nth-child(4):checked~.slides {
+        transform: translateX(-138vw);
+    }
+}
